@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+
+     background-image: url(./image/original.gif); 
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     background-size: 100% 100%;
+}
+
+header {
+    background-color: #979aaf;
+    color:rgb(132, 126, 207);
+    padding: 20px;
+    font-size: 24px;
+    width: 100%;
+
+    background-image: url(./image/risingstar.gif); 
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: bottom;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background-image: url(./image/roof3.jpg); 
+    background-position: bottom;
+    font-family:cursive;
+    width: 101.5%;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px;
+    filter: drop-shadow(1px 1px 20px rgb(72, 50, 50));
+}
+
+nav ul li a {
+    color: rgb(223, 199, 199);
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.container{
+    margin: 90px 0 0 330px;
+    width: 50%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    top: 100%;
+}
+
+.container img{
+    width: 25%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 10px inset rgb(162, 85, 85);
+    box-shadow: 0 2px 20px rgb(99, 86, 86) ;
+}
+
+.container img:hover{
+    width: 100%;
+}
+
+.choice{
+    position: absolute;
+    top: 21.4%;
+    width: 97.5%;
+    text-align: center;
+    font-size: 30px;
+    border: solid #978786;
+    font-family:cursive;
+}
+li a:hover {
+    color: rgb(133, 83, 83);
+}
+
+img:hover {
+    transform: scale(1);
+}
+
+img {
+    transform: scale(0.8); 
+    transition: ease-in-out s;
+}
+
+.room{
+    margin: 90px 0 0 300px;
+    width: 60%;
+    height: 450px;
+    gap: 50px;
+}
+
+.room img{
+    width: 70%;
+    height: 140%;
+    border-radius: 10px;
+    border: 10px inset rgb(162, 85, 85);
+    transition: ease-in-out 0.5s;
+    box-shadow: 0 2px 20px rgb(99, 86, 86) ;
+}
+
+#about{
+    background-color: #b47d7d;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    width: 90%;
+    font-size: larger;
+    border-radius: 10px;
+    border: 10px inset rgb(162, 85, 85);
+    box-shadow: 0 2px 20px rgb(99, 86, 86) ;
+    margin: 90px 0 0 100px;
+    width: 60%;
+    height: 200px;
+    font-family:cursive;
+}
+
+#chef{
+    position: absolute;
+    top: 29%;
+    right: 0%;
+    filter: drop-shadow(1px 1px 20px rgb(0, 13, 255))
+}
+
+h1{
+    background: linear-gradient(to right, red, orange, yellow, rgb(119, 226, 119), rgb(135, 135, 255), indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: cursive;
+}
+
+.hours-container {
+    width: 600px;
+    padding: 20px;
+    background-color: #b87c7c;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 90px 0 0 300px;
+    right: 2%;
+    border-radius: 10px;
+    border: 10px inset rgb(162, 85, 85);
+    box-shadow: 0 2px 20px rgb(99, 86, 86) ;
+}
+
+.hours-container h2,p{
+    color: #f4c1c1;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family:cursive;
+}
+
+.operation-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #692727;
+    transition: background-color 0.3s ease;
+}
+  
+.operation-time:hover {
+    background-color: rgb(162, 85, 85);
+}
+   
+#clock{
+    position: absolute;
+    top: 31%;
+    right: 0%;
+    filter: drop-shadow(1px 1px 20px rgb(255, 0, 162))
+}
+  
+#location {
+    padding: 30px;
+    border-radius: 8px;
+    width: 500px;
+    height: 300px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-image: url(./image/map.jpg); 
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    border: 10px inset rgb(162, 85, 85);
+    box-shadow: 0 2px 20px rgb(99, 86, 86) ;
+}
+  
+#location h2 {
+    color: #000000;
+    font-size: 1.8rem;
+    margin: -30px;
+    font-style: italic;
+}
+  
+#location p {
+    color: #000000;
+    font-size: 1.1rem;
+    margin: 310px 0px 0px 50px;
+    font-weight: 500;
+    font-style: italic;
+
+}
+#contact {
+    background-color: #d08484;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: 10px inset rgb(162, 85, 85);
+    box-shadow: 0 2px 20px rgb(99, 86, 86) ;
+}
+  
+  
+#contact h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+  
+#contact p {
+    color: #555;
+    font-size: 1.1rem; 
+    margin: 0;
+    text-align: center; 
+    line-height: 1.5; 
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    padding: 10px;
+    font-size: 16px;
+    color: #000000;
+    border: 1px solid #886464;
+    border-radius: 20px;
+    width: 400px;
+}
+  
+.search-btn {
+    padding: 10px 20px;
+    background-color: #74392c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+  
+.search-btn:hover {
+    background-color: #bca997;
+}
+
+#lock{
+    position: absolute;
+    top: 30%;
+    right: 0%;
+    filter: drop-shadow(1px 1px 20px rgb(255, 71, 71))
+}
+
+#call{
+    position: absolute;
+    top: 30%;
+    right: 0%;
+    filter: drop-shadow(1px 1px 20px rgb(255, 170, 170))
+}
+
+.call2{
+    position: absolute;
+    top: 30%;
+    right: 65%;
+    filter: drop-shadow(1px 1px 20px rgb(255, 145, 145))
+}
+  
+.footer-logo img {
+    width: 120px;
+}
+
+.footer-social a {
+    margin: 0 15px;
+}
+
+.footer-social img {
+    width: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
+}
+
+.footer-container ,p{
+    font-family:cursive;
+    font-size: medium;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer{
+ position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #624141;
+  border: solid rgb(95, 37, 37);
+}
