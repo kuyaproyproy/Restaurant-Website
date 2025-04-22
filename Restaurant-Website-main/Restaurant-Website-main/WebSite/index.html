@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonLight Bistro | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function submitSearch(event) {
+          event.preventDefault(); 
+    
+          const query = document.getElementById('searchInput').value.trim().toLowerCase(); 
+          let pageToRedirect = '';
+    
+          
+          switch (query) {
+            case 'menu':
+              pageToRedirect = 'menu2.html';
+              break;
+            case 'about':
+              pageToRedirect = 'about.html';
+              break;
+            case 'hours':
+              pageToRedirect = 'hours.html';
+              break;
+            case 'location':
+              pageToRedirect = 'location.html';
+              break;
+            case 'contact':
+              pageToRedirect = 'contact.html';
+              break;
+            default:
+              alert('Page not found for your search.');
+              return;
+          }
+    
+          window.location.href = pageToRedirect;
+        }
+      </script>
+</head>
+<body>
+    <header>
+        <h1 >Welcome to MoonLight Bistro</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu2.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="hours.html">Hours</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="search-container">
+        <form onsubmit="submitSearch(event)">
+          <input type="text" id="searchInput" class="search-bar" placeholder="Search...">
+          <button type="submit" class="search-btn">Search</button>
+        </form>
+    </div>   
+    <div class="container">
+        <img src="./image/birato1.jpg">
+        <img src="./image/bistro.jpg">
+        <img src="./image/bistro2.png">
+        <img src="./image/bistro3.jpg">
+        <img src="./image/OIP.jpg">
+        <img src="./image/birsto7.jpg">
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 MoonLight Bristo . All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="./image/facebook-2.png">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="./image/instagram-logo-transparent-background-2.png">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="./image/twitter5.png">
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="./image/you1.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
